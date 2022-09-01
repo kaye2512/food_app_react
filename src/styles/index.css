@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'ClashDisplay-Regular';
+    src: url('../assets/fonts/ClashDisplay-Regular.woff2').format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ClashDisplay-Regular';
+    src: url('../assets/fonts/ClashDisplay-Regular.woff2').format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'ClashDisplay-Regular';
+    src: url('../assets/fonts/ClashDisplay-Regular.woff2').format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
