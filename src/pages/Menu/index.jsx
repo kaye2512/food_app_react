@@ -9,29 +9,20 @@ const Menu = () => {
     useEffect(() => {
         dispatch(fetchProducts())
     }, [])
+
     return (
         <div>
             {
-                products.status === 'pending' ?
-                <div>Loading...</div> :
-                <div>
-                    {
-                        products && products.map((menuCategory, index) => {
-                            return (
-                                <>
-                                    <h2>{menuCategory.data.name.name}</h2>
-                                    <div className="products-list">{
-                                        menuCategory.data.products.map((product, index) => {
-                                            return (
-                                                <div>{product.name}</div>
-                                            )
-                                        })
-                                    }</div>
-                                </>
-                            )
-                        })
-                    }
-                </div>
+                products.status === 'pending' ? 
+                <div>Loading...</div> : 
+
+                <div className="menu-wrapper">{
+                    products.products && products.products[0].products.map((product, index) => {
+                        return (
+                            <div className="text-white">{product.name}</div>
+                        )
+                    })
+                }</div>
             }
         </div>
     )
